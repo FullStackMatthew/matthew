@@ -1,0 +1,22 @@
+stages:
+  - build
+  - push
+  - test
+  - review
+  
+services:
+  - registry-gitlab.newtrax.com/server-platform/internal/docker-dind:$DOCKER_VERSION
+    
+include:
+  - project: 'server-platform/templates/gitlab-ci'
+    file: '/container-build-multi-stage.gitlab-ci.yml'
+    ref: 'develop'
+  - project: 'server-platform/templates/gitlab-ci'
+    file: '/container-push.gitlab-ci.yml'
+    ref: 'develop'
+  - project: 'server-platform/templates/gitlab-ci'
+    file: '/security-scan.gitlab-ci.yml'
+    ref: 'develop'
+  - project: 'server-platform/templates/gitlab-ci'
+    file: '/k8s-deployments.gitlab-ci.yml'
+    ref: 'develop'

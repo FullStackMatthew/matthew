@@ -1,0 +1,32 @@
+{
+  "modules": {
+    "configurationTitle": "Konfiguracje",
+    "safetyTitle": "Bezpieczeństwo",
+    "operationTitle": "Operacja",
+    "analyticsTitle": "Analityka"
+  },
+  "login": {
+    "title": "Zaloguj się na swoje konto",
+    "welcome": "Witamy na platformie Newtrax. Wprowadź swój identyfikator użytkownika i hasło, aby się zalogować."
+  },
+
+  "#": "#",
+  "Name": "Imię",
+  "Action": "Akcja",
+  "Update": "Aktualizacja",
+  "Delete": "Usunąć",
+  "Save": "Zapisać",
+  "Cancel": "Anulować",
+  "Rows per page": "Rzędy na stronę",
+
+  "Username": "Nazwa Użytkownika",
+  "Password": "Hasło",
+  "Login": "Zaloguj sie",
+  "Machine": "Maszyna",
+  "Type": "Rodzaj",
+  "Model": "Model",
+  "Fleet": "Flota",
+  "Telemetry": "Telemetry",
+  "Sensor": "Czujnik",
+  "Alarm": "Sygnalizacja"
+}
